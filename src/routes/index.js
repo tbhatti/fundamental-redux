@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import App from '../App';
-
-import Counter from '../components/counter';
-import Games from '../components/games';
+import GetTodos from '../components/todos/get-todos';
 
 
 export default () => {
@@ -11,8 +9,7 @@ export default () => {
 		<BrowserRouter>
 			<Switch>				
 			  <Route exact path='/' component={App}/>			  
-				<Route path='/games' component={Games}/>
-				<Route path='/counter' component={Counter}/>
+				<Route path='/todos' component={GetTodos}/>
 			</Switch>
 		</BrowserRouter>
 	)

@@ -9,7 +9,7 @@ export default class Games extends React.Component {
 		this.getDataHandler = this.getDataHandler.bind(this)		
 	}
 	getDataHandler () {
-		console.log(store.getState().userReducer.user,'HELO DATA')
+		console.log(store.getState().todoReducer.todo,'HELO DATA')
 	}
 
 	render () {

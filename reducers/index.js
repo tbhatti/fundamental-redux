@@ -1,14 +1,14 @@
 import { SET_DATA } from '../types';
 
 const initState = {
-	user: {}
+	todo: {}
 }
 
 export default (state = initState, action) => {
 
 	switch(action.type) {
 		case SET_DATA :
-			return {...state, user: action.payload.user}
+			return {...state, todo: action.payload.todo}
 		default :
 			return state
 	}

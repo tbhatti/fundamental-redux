@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import SetTodos from './components/todos/set-todos';
+import GetTodos from './components/todos/get-todos';
 class App extends Component {
     render() {
         return (
             <div>
                 <h1>HelloWorld</h1>
-                <a href="/counter">Counter</a> 
-                <a href="/games">Games</a>
+                <SetTodos></SetTodos>
+                <GetTodos></GetTodos>
+                <a href="/todos">Todos</a>
             </div>
         );
     }

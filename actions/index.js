@@ -1,16 +1,12 @@
 import { SET_DATA } from '../types';
 
-export const setData = (user) => {
-
+export const setData = (todo) => {
 	return dispatch => {
-
 		dispatch({
 			type: SET_DATA,
 			payload: {
-				user
+				todo
 			}
 		})
-
 	}
-
 }
