@@ -4,6 +4,8 @@ class App extends Component {
         return (
             <div>
                 <h1>HelloWorld</h1>
+                <a href="/counter">Counter</a> 
+                <a href="/games">Games</a>
             </div>
         );
     }
